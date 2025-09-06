@@ -1,60 +1,54 @@
-/* Adapted from https://codepen.io/mutedblues/pen/MmPNPG */
-
+/* =========================
+   Default (Desktop > 1024px)
+========================= */
 html, body {
   overflow-x: hidden;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
+
 body {
   font-family: 'roboto', sans-serif;  
 }
 
 header {
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: aliceblue;
+  z-index: 100;
+  background: gray;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.headerHInput{
-  display:flex;
-  justify-content: space-between;
-  text-align: center;
+.main {
+  padding-top: 80px; /* header-ის სიმაღლის გათვალისწინებით */
 }
 
-.nav-header {
-  flex-grow: 1;
-  max-width:1440px;
-  width: 100%;  
-  height: 100%;     
-}
-
-header > div.nav-header {
+.header__nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  padding-left: 2rem;
-/*   flex-grow: 1; */
+  height:100%;
 }
 
 header h1 {
   margin-left: 1rem;
-  font-weight: 500;
-  font-size: 50px;
-  margin-top:35px;
+  font-size: 3rem;
+  font-weight: 500; 
 }
 
 header a {
   text-decoration: none;
+  color: #000;
 }
 
-/* "Hide" checkbox -- moves it off screen*/
 #menu-btn {
   position: absolute;
   top: -100%;
   left: -100%;
 }
 
-/* Hide hamburger for bigger screens */
 .menu-icon {
   visibility: hidden;
 }
@@ -65,4 +59,12 @@ header a {
   align-items: center;
   max-width: 250px;
   margin-right: 2rem;
+  gap: 50px;
+  padding: 20px;
 }
+
+.some {
+  font-size: 25px;
+  font-weight: 600;
+}
+
