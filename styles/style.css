@@ -1,6 +1,4 @@
-/* =========================
-   Default (Desktop > 1024px)
-========================= */
+
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -22,7 +20,7 @@ header {
 }
 
 .main {
-  padding-top: 80px; /* header-ის სიმაღლის გათვალისწინებით */
+  padding-top: 80px; 
 }
 
 .header__nav {
